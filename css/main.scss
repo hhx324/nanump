@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+@import "_var", "_mixxin";
+
+.top_visual {
+    overflow: hidden;
+    height: 200vw;
+    font-size: 3.5vw;
+    color: #333;
+
+    &::before {
+        @include transform(scale(1.5));
+        @include transition (transform 2s);
+        @include bgcover(cover);
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200vw;
+    }
+
+    &.on::before {
+        @include transform(scale(1));
+    }
+
+    .txtbox {
+        opacity: 0;
+        position: relative;
+        top: 50%;
+        left: 0%;
+        text-align: center;
+        padding: 3vw;
+
+        h2 {
+            font-size: 8vw;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 5vw;
+            font-weight: 400;
+            padding-top: 5vw;
+        }
+    }
+
+    .bgchange {
+        opacity: 1;
+        @include transform(scale(1.1));
+        @include transition (transform 1s);
+        @include bgcover(cover);
+    }
+}
+
+.main_topvisual {
+    &::before {
+        background: url("../images/index/cnt1.png") no-repeat center;
+        min-height: 600px;
+    }
+}
+
+/* cnt2 */
+.cnt2 {
+    height: 120vw;
+    width: 100%;
+    opacity: 1;
+    font-size: 3.5vw;
+
+    .cnt2_top {
+        position: relative;
+        top: 20vw;
+        width: 100%;
+        height: 40%;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        h2 {
+            position: absolute;
+            top: 10vw;
+            left: 60%;
+            font-size: 4vw;
+            font-weight: 500;
+        }
+
+        p {
+            position: absolute;
+            top: 15vw;
+            left: 65%;
+        }
+    }
+
+    .bgchange {
+        opacity: 1;
+        @include transform(scale(1.1));
+        @include transition (transform 1s);
+        @include bgcover(cover);
+    }
+
+    .cnt2_btm {
+        position: relative;
+        width: 100%;
+        height: 20%;
+        top: 20vw;
+
+        img {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        p {
+            position: relative;
+            top: 5vw;
+            left: 5vw;
+            padding: 0 0 2vw 5vw
+        }
+    }
+
+    .cnt2_bg {
+        height: 10%;
+
+        .gray1 {
+            position: absolute;
+            top: 0;
+            width: 161px;
+            height: 130vw;
+            background-color: $gray;
+            z-index: -1;
+        }
+
+        .gray2 {
+            position: absolute;
+            top: 23%;
+            width: 500vw;
+            height: 28vw;
+            background-color: $gray;
+            z-index: -1;
+        }
+    }
+}
+
+/* cnt3 cnt5 */
+.cnt3, .cnt5 {
+    height: 100vw;
+    width: 100%;
+
+    .swiper-container {
+        position: absolute;
+        width: 203px;
+        height: 215px;
+        position: absolute;
+        left: 2vw;
+        top: 20%;
+
+        .swiper-wrapper {
+            position: relative;
+
+            .swiper-slide {
+                background-position: center;
+                background-size: cover;
+                width: 203px;
+                height: 215px;
+            }
+        }
+    }
+    .tit{position: absolute;top: 56%;right: 0;font-size: 3.5vw;width: 35%;
+        h3{font-size: 4vw;padding-bottom: 2vw;}}
+}
+
+/* cnt4 cnt6 */
+.cnt4, .cnt6 {
+    height: 100vw;
+    width: 100%;
+
+    .swiper-container {
+        position: absolute;
+        width: 203px;
+        height: 215px;
+        position: absolute;
+        right: 2vw;
+        top: 20%;
+
+        .swiper-wrapper {
+            position: relative;
+
+            .swiper-slide {
+                background-position: center;
+                background-size: cover;
+                width: 203px;
+                height: 215px;
+            }
+        }
+    }
+    .tit{position: absolute;top: 56%;left: 0;font-size: 3.5vw;width: 35%;text-align: right;
+        h3{font-size: 4vw;padding-bottom: 2vw;}}
+}
+
+

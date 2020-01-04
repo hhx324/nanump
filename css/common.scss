@@ -1,0 +1,109 @@
+@charset "utf-8";
+@import "_var", "_mixxin";
+@font-face{
+    font-family: nanum;
+    src: url("../fonts/NanumSquareL.woff") format("woff"),
+    url("../fonts/NanumSquareL.ttf") format("truetype");
+
+    font-weight: 300;
+}
+@font-face{
+    font-family: nanum;
+    src: url("../fonts/NanumSquareR.woff") format("woff"),
+    url("../fonts/NanumSquareR.ttf") format("truetype");
+
+    font-weight: 400;
+}
+@font-face{
+    font-family: nanum;
+    src: url("../fonts/NanumSquareB.woff") format("woff"),
+    url("../fonts/NanumSquareB.ttf") format("truetype");
+
+    font-weight: 500;
+}
+@font-face{
+    font-family: nanum;
+    src: url("../fonts/NanumSquareEB.woff") format("woff"),
+    url("../fonts/NanumSquareEB.ttf") format("truetype");
+
+    font-weight: 700;
+}
+
+/* tag reset */
+
+body, h1, h2, h3, h4, ul, button, p, figure {margin: 0;padding: 0;}
+h1, h2, h3, h4{font-size: 100%;}
+ul{list-style: none;}
+a:link, a:visited, a:hover, a:active{text-decoration: none;color: inherit;}
+img{vertical-align: top;}
+button{border: none;background: none;}
+img, figure{max-width: 100%;height: auto;}
+address{font-style: normal;}
+header, nav, section, article, figure, footer{display: block;}
+
+/* commonclass */
+.f_l{float: left;}
+.f_r{float: right;}
+.p_r{position: relative;}
+.p_a{position: absolute;}
+.claearfix::after{content: '';display: block;clear: both;}
+.sr-only{position: absolute;top: 0;left: -9999px;}
+
+body{font-family: nanum;font-size: 3vw;color: #333;font-weight: 300; word-break: keep-all;}
+#wrap{min-width: 320px;overflow: hidden;}
+
+/* header */
+
+#header{
+    @include transition(all 0.6s);
+    position: fixed;top: 0px;left: 0;right: 0;height: 58px;z-index: 1000;
+    &.load{top: 0;} //#header.load
+    // scroll
+    &.bgchange{background: rgba(99, 187, 245, 0.3);border-color: #e5e5e5;
+        .logo .logo_black{opacity: 0;}
+        .logo .logo_yellow{opacity: 1;}
+        .btn_menu .line{background: $orange;}
+    }
+    .btn_menu.active .line{background: #fff !important;}
+}
+.logo{
+    width: 38vw; height: 3vw;top: 20%;left: 28vw;
+    img{
+        @include transition(opacity 0.5s);    
+        top: 0;left: 0;
+    }
+    &, img{position: absolute;}
+    .logo_yellow{opacity: 0;}
+}
+.btn_menu{
+    &, .line{position: absolute;}
+    top: 35%;left: 3vw;width: 8vw;height: 4vw;z-index: 1000;
+    .line{
+        @include radius(8px);
+        @include transition(all 0.5s);
+        @include bgcover(cover);
+        width: 100%;height: 4px;background: #333;left: 0;
+        &.top{top: 0;}
+        &.mid{top: 10px;}
+        &.btm{top: 20px;}
+    }
+    &.active{
+        .top{
+            @include transform(rotate(45deg));
+            top: 10px;
+        }
+        .mid{opacity: 0;}
+        .btm{
+            @include transform(rotate(-45deg));
+            top: 10px;
+        }
+    }
+}
+#gnb{font-size: 10vw;
+    visibility: hidden;;position: fixed;top: 0;left: 100;right: 0;bottom: 0;background: $orange;padding-top: 56px;overflow-y: auto; //overflow-y: auto; 모바일회전 landscape(가로)일 경우 fixed는 숨겨진 메뉴를 볼수 없기때문에
+    ul li a{display: block;height: 35px;line-height: 35px;color: #fff;}
+    > ul > li{
+        > a{position: relative;padding: 30px 40px;font-weight: 500;}
+       
+    }
+}
