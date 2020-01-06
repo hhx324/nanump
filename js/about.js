@@ -34,7 +34,9 @@ $(document).ready(function () {
                 });
             });
         }, 100);
-         <!--Initialize Swiper-- >
+    });
+    
+    /* Initialize Swiper */
         var galleryThumbs = new Swiper('.gallery-thumbs', {
             spaceBetween: 10,
             slidesPerView: 4,
@@ -68,5 +70,4 @@ $(document).ready(function () {
               prevEl: '.swiper-button-prev',
             },
           });
-    });
 });
