@@ -134,11 +134,11 @@
   .cnt3 .tit, .cnt5 .tit {
     position: absolute;
     top: 56%;
-    right: 0;
-    font-size: 3.5vw;
+    right: 2vw;
+    font-size: 4vw;
     width: 35%; }
     .cnt3 .tit h3, .cnt5 .tit h3 {
-      font-size: 4vw;
+      font-size: 4.5vw;
       padding-bottom: 2vw; }
 
 /* cnt4 cnt6 */
@@ -162,12 +162,12 @@
   .cnt4 .tit, .cnt6 .tit {
     position: absolute;
     top: 56%;
-    left: 0;
-    font-size: 3.5vw;
+    left: 2vw;
+    font-size: 4vw;
     width: 35%;
     text-align: right; }
     .cnt4 .tit h3, .cnt6 .tit h3 {
-      font-size: 4vw;
+      font-size: 4.5vw;
       padding-bottom: 2vw; }
 
 /*# sourceMappingURL=main.css.map */

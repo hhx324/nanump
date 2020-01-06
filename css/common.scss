@@ -49,7 +49,7 @@ header, nav, section, article, figure, footer{display: block;}
 .claearfix::after{content: '';display: block;clear: both;}
 .sr-only{position: absolute;top: 0;left: -9999px;}
 
-body{font-family: nanum;font-size: 3vw;color: #333;font-weight: 300; word-break: keep-all;}
+body{font-family: nanum;font-size: 3.5vw;color: #333;font-weight: 300; word-break: keep-all;}
 #wrap{min-width: 320px;overflow: hidden;}
 
 /* header */
@@ -57,6 +57,15 @@ body{font-family: nanum;font-size: 3vw;color: #333;font-weight: 300; word-break:
 #header{
     @include transition(all 0.6s);
     position: fixed;top: 0px;left: 0;right: 0;height: 58px;z-index: 1000;
+    .logo{
+        width: 38vw; height: 3vw;top: 20%;left: 28vw;
+        img{
+            @include transition(opacity 0.5s);    
+            top: 0;left: 0;
+        }
+        &, img{position: absolute;}
+        .logo_yellow{opacity: 0;}
+    }
     &.load{top: 0;} //#header.load
     // scroll
     &.bgchange{background: rgba(99, 187, 245, 0.3);border-color: #e5e5e5;
@@ -66,15 +75,7 @@ body{font-family: nanum;font-size: 3vw;color: #333;font-weight: 300; word-break:
     }
     .btn_menu.active .line{background: #fff !important;}
 }
-.logo{
-    width: 38vw; height: 3vw;top: 20%;left: 28vw;
-    img{
-        @include transition(opacity 0.5s);    
-        top: 0;left: 0;
-    }
-    &, img{position: absolute;}
-    .logo_yellow{opacity: 0;}
-}
+
 .btn_menu{
     &, .line{position: absolute;}
     top: 35%;left: 3vw;width: 8vw;height: 4vw;z-index: 1000;
@@ -106,4 +107,12 @@ body{font-family: nanum;font-size: 3vw;color: #333;font-weight: 300; word-break:
         > a{position: relative;padding: 30px 40px;font-weight: 500;}
        
     }
+}
+
+/* footer */
+
+#footer{
+    background: rgba(99, 187, 245, 0.3);font-size: 2vw;height: 15vw;padding-top: 3vw;
+    .logo{padding-right: 2vw;}
+    .f_l{padding-left: 2vw;}
 }
