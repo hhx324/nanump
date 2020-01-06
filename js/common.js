@@ -33,7 +33,6 @@ $(document).ready(function () {
         $(this).removeClass('active').find('blind').text('메뉴 열기');
       } else {    //열기
         var scrollMove = scrollT;  //click시 스크롤을 저장
-        console.log(scrollMove);
   
         $(this).addClass('active').find('.sr-only').text('메뉴 닫기');
   

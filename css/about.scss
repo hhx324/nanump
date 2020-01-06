@@ -1,0 +1,136 @@
+@charset "utf-8";
+@import "_var", "_mixxin";
+
+/* header */
+#header {
+    .logo a h1 {
+        width: 200px;
+        font-size: 8vw;
+        padding-top: 1vw;
+        padding-left: 5vw;
+    }
+
+    &.bgchange {
+        .logo a h1 {
+            color: $orange;
+        }
+    }
+}
+
+/*  */
+.cnt1 {
+    height: 640px;
+    font-size: 14px;
+
+    >img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 640px;
+        width: 360px;
+    }
+
+    .after {
+        position: relative;
+        opacity: 0;
+        background-image: url("../images/about/cnt1-2.png");
+        width: 100%;
+        height: 640px;
+
+        h3 {
+            position: absolute;
+            left: 30%;
+            top: 80%;
+        }
+
+        p {
+            position: absolute;
+            left: 50%;
+            top: 86%;
+            font-size: 5vw;
+            font-weight: 400;
+        }
+    }
+
+    .bgchange {
+        opacity: 1;
+        @include transform(scale(1.1));
+        @include transition (transform 1s);
+        @include bgcover(cover);
+    }
+}
+
+/* cnt2 */
+
+.cnt2 {
+    height: 640px;
+    color: #fff;
+
+    img {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .swiper-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+            text-align: center;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+            h3 {
+                position: absolute;
+                top: 80%;
+                font-weight: 500;
+                font-size: 6vw;
+            }
+
+            p {
+                position: absolute;
+                top: 85%;
+                font-weight: 300;
+                font-size: 4vw;
+                line-height: 6vw;
+            }
+        }
+    }
+}
+
+/* cnt3 */
+
+.cnt3 {
+    height: 640px;
+    width: 100%;
+
+    .gallery-top {position: relative;
+        height: 580px;
+
+        h3 {position: absolute;top: 50%;font-size: 5.5vw;padding-left: 6vw;
+        }
+
+        p {position: absolute;top: 60%;font-size: 4vw;padding-left: 6vw;
+        line-height: 6vw;}
+    }
+
+    .gallery-thumbs {background: pink;
+        height: 60px;
+    }
+}
+
+/* cnt4 */
+.cnt4{height: 640px;}

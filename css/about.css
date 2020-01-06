@@ -1,0 +1,111 @@
+/* header */
+#header .logo a h1 {
+  width: 200px;
+  font-size: 8vw;
+  padding-top: 1vw;
+  padding-left: 5vw; }
+#header.bgchange .logo a h1 {
+  color: #ffcc33; }
+
+/*  */
+.cnt1 {
+  height: 640px;
+  font-size: 14px; }
+  .cnt1 > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 640px;
+    width: 360px; }
+  .cnt1 .after {
+    position: relative;
+    opacity: 0;
+    background-image: url("../images/about/cnt1-2.png");
+    width: 100%;
+    height: 640px; }
+    .cnt1 .after h3 {
+      position: absolute;
+      left: 30%;
+      top: 80%; }
+    .cnt1 .after p {
+      position: absolute;
+      left: 50%;
+      top: 86%;
+      font-size: 5vw;
+      font-weight: 400; }
+  .cnt1 .bgchange {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    -webkit-background-size: cover !important;
+    background-size: cover !important; }
+
+/* cnt2 */
+.cnt2 {
+  height: 640px;
+  color: #fff; }
+  .cnt2 img {
+    position: absolute;
+    z-index: -1; }
+  .cnt2 .swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .cnt2 .swiper-container .swiper-slide {
+      text-align: center;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center; }
+      .cnt2 .swiper-container .swiper-slide h3 {
+        position: absolute;
+        top: 80%;
+        font-weight: 500;
+        font-size: 6vw; }
+      .cnt2 .swiper-container .swiper-slide p {
+        position: absolute;
+        top: 85%;
+        font-weight: 300;
+        font-size: 4vw;
+        line-height: 6vw; }
+
+/* cnt3 */
+.cnt3 {
+  height: 640px;
+  width: 100%; }
+  .cnt3 .gallery-top {
+    position: relative;
+    height: 580px; }
+    .cnt3 .gallery-top h3 {
+      position: absolute;
+      top: 50%;
+      font-size: 5.5vw;
+      padding-left: 6vw; }
+    .cnt3 .gallery-top p {
+      position: absolute;
+      top: 60%;
+      font-size: 4vw;
+      padding-left: 6vw;
+      line-height: 6vw; }
+  .cnt3 .gallery-thumbs {
+    background: pink;
+    height: 60px; }
+
+/* cnt4 */
+.cnt4 {
+  height: 640px; }
+
+/*# sourceMappingURL=about.css.map */
