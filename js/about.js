@@ -70,4 +70,6 @@ $(document).ready(function () {
               prevEl: '.swiper-button-prev',
             },
           });
+
+      
 });

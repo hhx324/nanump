@@ -2,7 +2,7 @@
   overflow: hidden;
   height: 200vw;
   font-size: 3.5vw;
-  color: #333; }
+  color: #000; }
   .top_visual::before {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
@@ -23,7 +23,7 @@
   .top_visual .txtbox {
     opacity: 0;
     position: relative;
-    top: 50%;
+    top: 70%;
     left: 0%;
     text-align: center;
     padding: 3vw; }
@@ -32,8 +32,8 @@
       font-weight: 500; }
     .top_visual .txtbox p {
       font-size: 5vw;
-      font-weight: 400;
-      padding-top: 5vw; }
+      font-weight: 500;
+      padding-top: 2vw; }
   .top_visual .bgchange {
     opacity: 1;
     -webkit-transform: scale(1.1);
