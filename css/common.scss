@@ -104,7 +104,7 @@ body{font-family: nanum;font-size: 3.5vw;color: #333;font-weight: 300; word-brea
     visibility: hidden;;position: fixed;top: 0;left: 100;right: 0;bottom: 0;background: $orange;padding-top: 56px;overflow-y: auto; //overflow-y: auto; 모바일회전 landscape(가로)일 경우 fixed는 숨겨진 메뉴를 볼수 없기때문에
     ul li a{display: block;height: 35px;line-height: 35px;color: #fff;}
     > ul > li{
-        > a{position: relative;padding: 30px 40px;font-weight: 500;}
+        > a{position: relative;padding: 30px 40px;font-weight: 700;}
        
     }
 }
