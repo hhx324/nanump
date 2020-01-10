@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "_var", "_mixxin";
+@import "_var", "_mixin";
 @font-face{
     font-family: nanum;
     src: url("../fonts/NanumSquareL.woff") format("woff"),
@@ -58,7 +58,7 @@ body{font-family: nanum;font-size: 3.5vw;color: #333;font-weight: 300; word-brea
     @include transition(all 0.6s);
     position: fixed;top: 0px;left: 0;right: 0;height: 58px;z-index: 1000;
     .logo{
-        width: 38vw; height: 3vw;top: 20%;left: 28vw;
+        width: 38vw; height: 3vw;top: 20%;left: 37vw;
         img{
             @include transition(opacity 0.5s);    
             top: 0;left: 0;
@@ -68,7 +68,7 @@ body{font-family: nanum;font-size: 3.5vw;color: #333;font-weight: 300; word-brea
     }
     &.load{top: 0;} //#header.load
     // scroll
-    &.bgchange{background: rgba(99, 187, 245, 0.3);border-color: #e5e5e5;
+    &.bgchange{background: rgba(109, 109, 109, 0.3);border-color: #e5e5e5;
         .logo .logo_black{opacity: 0;}
         .logo .logo_yellow{opacity: 1;}
         .btn_menu .line{background: $orange;}
@@ -112,7 +112,6 @@ body{font-family: nanum;font-size: 3.5vw;color: #333;font-weight: 300; word-brea
 /* footer */
 
 #footer{
-    background: rgba(99, 187, 245, 0.3);font-size: 2vw;height: 15vw;padding-top: 3vw;
-    .logo{padding-right: 2vw;}
-    .f_l{padding-left: 2vw;}
+    font-size: 2.5vw;height: 15vw;padding: 5vw;
+    .p_a{line-height: 1.5;}
 }

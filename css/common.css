@@ -95,7 +95,7 @@ body {
     width: 38vw;
     height: 3vw;
     top: 20%;
-    left: 28vw; }
+    left: 37vw; }
     #header .logo img {
       -webkit-transition: opacity 0.5s;
       -o-transition: opacity 0.5s;
@@ -109,7 +109,7 @@ body {
   #header.load {
     top: 0; }
   #header.bgchange {
-    background: rgba(99, 187, 245, 0.3);
+    background: rgba(109, 109, 109, 0.3);
     border-color: #e5e5e5; }
     #header.bgchange .logo .logo_black {
       opacity: 0; }
@@ -180,13 +180,10 @@ body {
 
 /* footer */
 #footer {
-  background: rgba(99, 187, 245, 0.3);
-  font-size: 2vw;
+  font-size: 2.5vw;
   height: 15vw;
-  padding-top: 3vw; }
-  #footer .logo {
-    padding-right: 2vw; }
-  #footer .f_l {
-    padding-left: 2vw; }
+  padding: 5vw; }
+  #footer .p_a {
+    line-height: 1.5; }
 
 /*# sourceMappingURL=common.css.map */

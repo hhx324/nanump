@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import "_var", "_mixxin";
+@import "_var", "_mixin";
 
 .top_visual {
     overflow: hidden;
@@ -31,7 +31,7 @@
         left: 0%;
         text-align: center;
         padding: 3vw;
-
+        text-shadow: 1px 2px rgba(195, 195, 195, 0.5); 
         h2 {
             font-size: 8vw;
             font-weight: 500;
@@ -91,6 +91,14 @@
             top: 15vw;
             left: 65%;
         }
+        .gray1 {
+            position: absolute;
+            top: 30%;
+            width: 100%;
+            height: 70%;
+            background-color: $gray;
+            z-index: -1;
+        }
     }
 
     .bgchange {
@@ -120,34 +128,13 @@
         }
     }
 
-    .cnt2_bg {
-        height: 10%;
-
-        .gray1 {
-            position: absolute;
-            top: 0;
-            width: 161px;
-            height: 130vw;
-            background-color: $gray;
-            z-index: -1;
-        }
-
-        .gray2 {
-            position: absolute;
-            top: 23%;
-            width: 500vw;
-            height: 28vw;
-            background-color: $gray;
-            z-index: -1;
-        }
-    }
 }
 
 /* cnt3 cnt5 */
 .cnt3, .cnt5 {
     height: 100vw;
     width: 100%;
-
+    img{background-color: $gray;}
     .swiper-container {
         position: absolute;
         width: 203px;
@@ -175,7 +162,7 @@
 .cnt4, .cnt6 {
     height: 100vw;
     width: 100%;
-
+    img{background-color: $gray;}
     .swiper-container {
         position: absolute;
         width: 203px;
