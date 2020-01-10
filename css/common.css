@@ -38,7 +38,8 @@ button {
 
 img, figure {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  vertical-align: top; }
 
 address {
   font-style: normal; }

@@ -1,0 +1,57 @@
+/* header */
+#header .logo a h1 {
+  width: 200px;
+  font-size: 8vw;
+  padding-top: 1vw; }
+#header.bgchange .logo a h1 {
+  color: #ffcc33; }
+
+/* section */
+section {
+  width: 100%;
+  height: 2000px; }
+
+/* cnt1 */
+.cnt1 {
+  height: 640px;
+  background: pink; }
+
+/* cnt2 */
+.cnt2 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: reverse;
+  height: 500px;
+  overflow: hidden; }
+  .cnt2 img {
+    padding-top: 10px;
+    width: 100%; }
+  .cnt2 .column {
+    padding: 0 5px;
+    box-sizing: border-box;
+    transition: all 0.5s; }
+  .cnt2 .column:nth-child(1) {
+    width: 40%; }
+  .cnt2 .column:nth-child(2) {
+    width: 60%; }
+
+/* cnt3 */
+.cnt3 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  height: 500px;
+  overflow: hidden; }
+  .cnt3 img {
+    padding-top: 10px;
+    width: 100%; }
+  .cnt3 .column {
+    padding: 0 5px;
+    box-sizing: border-box;
+    transition: all 0.5s; }
+  .cnt3 .column:nth-child(1) {
+    width: 40%; }
+  .cnt3 .column:nth-child(2) {
+    width: 60%; }
+
+/*# sourceMappingURL=shop.css.map */

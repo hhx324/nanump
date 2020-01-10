@@ -1,0 +1,48 @@
+@charset "utf-8";
+@import "_var", "_mixin";
+
+/* header */
+#header {
+    .logo a h1 {
+        width: 200px;
+        font-size: 8vw;
+        padding-top: 1vw;
+    }
+
+    &.bgchange {
+        .logo a h1 {
+            color: $orange;
+        }
+    }
+}
+/* section */
+section{width: 100%;height: 2000px;}
+
+/* cnt1 */
+.cnt1{height: 640px;background: pink;}
+
+/* cnt2 */
+
+    
+.cnt2{display: flex;flex-wrap: nowrap;flex-direction:reverse;height: 500px;overflow: hidden;
+    img{padding-top: 10px;width: 100%;}
+    .column{padding: 0 5px;box-sizing: border-box;transition: all 0.5s;}
+    .column:nth-child(1){
+        width: 40%;
+}
+.column:nth-child(2){
+    width: 60%;
+}
+}
+
+/* cnt3 */
+.cnt3{display: flex;flex-wrap: nowrap;flex-direction:row-reverse;height: 500px;overflow: hidden;
+    img{padding-top: 10px;width: 100%;}
+    .column{padding: 0 5px;box-sizing: border-box;transition: all 0.5s;}
+    .column:nth-child(1){
+        width: 40%;
+}
+.column:nth-child(2){
+    width: 60%;
+}
+}
