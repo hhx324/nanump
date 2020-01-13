@@ -117,8 +117,9 @@ section {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: reverse;
-  height: 500px;
-  overflow: hidden; }
+  height: 400px;
+  overflow: hidden;
+  background: radial-gradient(circle, #fff9f9, #fbe2b2); }
   .cnt2 img {
     padding-top: 10px;
     width: 100%; }
