@@ -105,7 +105,8 @@
 
 /* cnt4 */
 .cnt4 {
-  height: 640px; }
+  height: 640px;
+  color: #fff; }
   .cnt4 > ul > li {
     position: relative;
     -webkit-background-size: cover !important;
@@ -117,8 +118,6 @@
       background-image: url("../images/about/cnt4-2.png"); }
     .cnt4 > ul > li:nth-child(3) {
       background-image: url("../images/about/cnt4-1.png"); }
-    .cnt4 > ul > li:nth-child(4) {
-      background-image: url("../images/about/cnt4-4-1.png"); }
     .cnt4 > ul > li::before {
       content: "";
       -webkit-transition: width 2s;
@@ -143,5 +142,32 @@
       left: 0; }
   .cnt4.on > ul > li::before {
     width: 0; }
+  .cnt4 .cnt4_2 {
+    font-weight: 400; }
+    .cnt4 .cnt4_2 .txt {
+      padding: 20px; }
+      .cnt4 .cnt4_2 .txt p {
+        padding-top: 10px; }
+      .cnt4 .cnt4_2 .txt a {
+        padding-top: 10px;
+        display: block; }
+  .cnt4 .cnt4_4 {
+    background: linear-gradient(to right, #ffcc33, #fff); }
+    .cnt4 .cnt4_4 .cnt4_4_1 {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+    .cnt4 .cnt4_4 .cnt4_4_3 {
+      position: absolute;
+      top: 0;
+      right: 25%; }
+    .cnt4 .cnt4_4 h3 {
+      font-size: 1.5rem;
+      padding-top: 30%;
+      padding-left: 3%; }
+    .cnt4 .cnt4_4 li:nth-child(1) {
+      float: right; }
+    .cnt4 .cnt4_4 li:nth-child(2) {
+      float: right; }
 
 /*# sourceMappingURL=about.css.map */
